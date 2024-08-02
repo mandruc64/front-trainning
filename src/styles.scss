@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 10%;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.card-content {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #999;
+}
