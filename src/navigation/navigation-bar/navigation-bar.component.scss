@@ -1,0 +1,27 @@
+nav {
+  background-color: #616161;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 3%;
+  font-size: 200%;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  color: #0000aa;
+}

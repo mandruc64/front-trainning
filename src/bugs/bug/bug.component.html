@@ -1,0 +1,8 @@
+<div class="card">
+  <div class="card-title">{{bug.severity}}</div>
+  <div class="card-content">{{bug.description}}</div>
+  <div class="card-footer">
+    <span>Assigned to: {{bug.assignedUser.firstName}} {{bug.assignedUser.lastName}}</span>
+  </div>
+  <button (click)='assignBug()'>Assign</button>
+</div>

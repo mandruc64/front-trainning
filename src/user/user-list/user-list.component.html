@@ -1,0 +1,19 @@
+@if (showList) {
+  <ol>
+    @for (user of apiUsers; track user.id; let index = $index) {
+      <li>
+        <app-user [user]="user" [positionInQueue]="index" (outputEvent)="alertUser($event)"
+                  (deleteEvent)="deleteUser($event)"/>
+      </li>
+    }
+  </ol>
+}
+
+@if (assignedBug !== null) {
+<div class="card">
+  <div class="card-title">{{ assignedBug?.severity }}</div>
+  <div class="card-content">{{ assignedBug?.description }}</div>
+</div>
+}
+
+<router-outlet></router-outlet>

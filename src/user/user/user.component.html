@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card-title">{{ user.firstName }}, {{ user.lastName }}</div>
+  <button (click)="deleteUser()" appRoleManagement [validRole]="'admin'">Delete</button>
+  <button (click)="navigateToUser(user)">View</button>
+  @if (positionInQueue === 0) {
+    <button (click)="emitUser()">Move</button>
+  }
+</div>
+
